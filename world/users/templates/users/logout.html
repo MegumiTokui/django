@@ -1,0 +1,29 @@
+{% extends 'new/base.html'%}
+{% comment %} {%load crispy_forms_tags %} {% endcomment %}
+
+{% block content %}
+
+
+
+<h1>Log Out</h1>
+ 
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Thanks for spending some quality time with the Web site today.
+
+
+            <a class="ml-2" href="{%url 'register' %}">Need An Account</a>
+        </small>
+ 
+    </div>
+
+</div>
+   <small class="text-muted">
+        Log In again? <a class="ml-2" href="{%url 'login'%}">Log In</a>
+
+    </small>
+</div>
+</div>
+
+{% endblock content %}
+

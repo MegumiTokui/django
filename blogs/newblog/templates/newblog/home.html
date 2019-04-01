@@ -1,0 +1,17 @@
+{% extends "newblog/base.html" %}
+
+{% block content %}
+<div class="container mt-5 ">
+
+
+
+    {% for post in posts %}
+
+        <h4>{{post.title}} By {{post.author}} published on {{post.date}}</h4>
+
+        <p>{{post.content}}</p>
+    
+    {%endfor%}
+            
+</div>
+{% endblock content %}
